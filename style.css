@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+:root{
+    --main-color:  #E28525 ;
+    --secondary-color: #016972; 
+    --thirth-color:#00403F ;
+    
+}
+/* card's container */
+#main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem;
+    
+}
+/* card-style */
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    background-color: brown;
+
+}
+.card >*{
+    padding: 0 3rem;
+   
+}
+.card-title{
+    font-family: "Big Shoulders Display",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight:700;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 2px;
+}
+.card-text{
+   font-family: "Lexend Deca",sans-serif;
+   line-height: 2em;
+   font-size: 15px;
+   font-weight: 400;
+   color:hsla(0, 0%, 100%, 0.75);
+   
+}
+/* buttons  */
+.button{
+    display: flex;
+    text-align: center;
+    font-family: "Lexend Deca",sans-serif;  
+}
+.button>p{
+    border-radius: 3rem;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1em 2.0em 1em 2.0em ;
+    
+}
+
+#button1 {
+    color: var(--main-color); 
+}
+#button1:hover{
+    background-color: var(--main-color);
+    color: whitesmoke;
+    border: solid 1px whitesmoke
+}
+#button2{
+    color: var(--secondary-color);
+}
+#button2:hover{
+    background-color: var(--secondary-color);
+    color: whitesmoke;
+    border: solid 1px whitesmoke
+}
+#button3{
+    color: var(--thirth-color);
+}
+#button3:hover{
+    background-color: var(--thirth-color);
+    color: whitesmoke;
+    border: solid 1px whitesmoke
+}
+
+/* cards color */
+#card1{
+    background-color: var(--main-color);
+    border-radius: 0.5em 0.5em 0 0;
+}
+#card2{
+    background-color: var(--secondary-color);
+}
+#card3{
+    background-color: var(--thirth-color);
+    border-radius: 0 0 0.5em 0.5em ;
+}
+/*  MEDIA QS */
+@media screen and (min-width: 1440px) {
+    #main-container{
+        display: flex;
+        flex-direction: row;   
+        justify-content: center;
+    }
+    #card1{
+        border-radius: 0.5em 0 0 0.5em;
+    }
+    #card3{
+        border-radius: 0 0.5em 0.5em 0;
+    }
+    .card{
+        width: 20%;
+        
+    }
+    .button{
+        padding-top:3rem;
+    }
+}
+        
